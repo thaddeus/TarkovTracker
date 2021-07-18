@@ -116,7 +116,7 @@
       const ttPatronData = await ttPatronResponse.json()
       this.ttPatronData = ttPatronData.patron_names
 
-      const contributorResponse = await fetch('https://api.github.com/orgs/TarkovTracker/members')
+      const contributorResponse = await fetch('https://api.github.com/repos/TarkovTracker/TarkovTracker/contributors')
       const contributorData = await contributorResponse.json()
       this.contributorData = contributorData
 
